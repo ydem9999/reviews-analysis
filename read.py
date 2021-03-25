@@ -19,3 +19,10 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print('There are', len(new),'reviews that less than 100 words')
+
+#good = []
+#for d in data:
+#	 if 'good' in d:
+#		good.append(d)
+good =[d for d in data if 'good' in d]
+print('There are', len(good), 'reviews with good.')
